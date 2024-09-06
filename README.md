@@ -1,18 +1,18 @@
-# Vite + React Project
+# Circlepe
 
 This project is built with Vite and React.
 
 ## Prerequisites
 
 - Node.js (version 14 or newer)
-- npm (usually comes with Node.js)
+- npm
 
 ## Getting Started
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/MaybeTarun/circlepe.git
+   cd circlepe
    ```
 
 2. Install dependencies:
