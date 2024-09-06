@@ -1,6 +1,6 @@
 # Circlepe
 
-This project is built with Vite and React.
+This project is built with Vite using React, TypeScript, Framer Motion and TailwindCSS.
 
 ## Prerequisites
 
