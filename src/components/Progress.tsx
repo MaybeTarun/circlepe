@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Progress = () => {
   const { scrollYProgress } = useScroll();
-  const [barWidth] = useState(240);
+  const [barWidth] = useState(280);
   const [color, setColor] = useState('#6BAFFF');
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
 
