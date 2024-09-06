@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Progress = () => {
   const { scrollYProgress } = useScroll();
-  const [barWidth, setBarWidth] = useState(240);
+  const [barWidth] = useState(240);
   const [color, setColor] = useState('#6BAFFF');
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1024);
 
@@ -51,7 +51,7 @@ const Progress = () => {
             }}
           />
           <motion.div
-            className="absolute rounded-full"
+            className="absolute rounded-full cursor-pointer"
             style={{
               x,
               width: '15px',

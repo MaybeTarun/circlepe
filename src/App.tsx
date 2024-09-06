@@ -5,7 +5,7 @@ import img3 from './assets/3.png';
 import img4 from './assets/4.png';
 import img5 from './assets/5.png';
 import img6 from './assets/6.png';
-import arrow from './assets/arrow.svg';
+// import arrow from './assets/arrow.svg';
 import Progress from './components/Progress.tsx'
 
 function App() {
@@ -50,6 +50,7 @@ function App() {
             </div>
             {/* img */}
             <div><img src={img2} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></div>
+            {/* <img src={arrow} className='absolute scale-y-[-1] w-48 h-auto rotate-45'></img> */}
           </section>
 
           {/* section 3 */}
@@ -67,6 +68,7 @@ function App() {
             </div>
             {/* img */}
             <div><img src={img3} className='rounded-t-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></div>
+            {/* <img src={arrow} className='absolute'></img> */}
           </section>
 
           {/* section 4 */}
@@ -89,6 +91,7 @@ function App() {
             </div>
             {/* img */}
             <div><img src={img4} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></div>
+            {/* <img src={arrow} className='absolute'></img> */}
           </section>
 
           {/* section 5 */}
@@ -105,6 +108,7 @@ function App() {
             </div>
             {/* img */}
             <div><img src={img5} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></div>
+            {/* <img src={arrow} className='absolute'></img> */}
           </section>
 
           {/* section 6 */}
@@ -126,6 +130,7 @@ function App() {
             </div>
             {/* img */}
             <div><img src={img6} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></div>
+            {/* <img src={arrow} className='absolute'></img> */}
           </section>
 
         </div>
