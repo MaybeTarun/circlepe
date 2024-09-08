@@ -5,7 +5,7 @@ import img3 from './assets/3.png';
 import img4 from './assets/4.png';
 import img5 from './assets/5.png';
 import img6 from './assets/6.png';
-import Progress from './components/Progress';
+import arrow from './assets/arrow.svg';
 import { useEffect, useState, useRef } from 'react';
 import { motion } from "framer-motion";
 
@@ -67,7 +67,6 @@ function App() {
 
   return (
     <>
-      <Progress />
       <div className="min-h-screen relative flex items-center justify-center bg-[#1b1b1b]">
         <div className="fixed top-[-350px] left-[-400px] w-[1100px] h-[1100px] bg-circle rounded-full overflow-hidden"></div>
         <div className="opacity-0 fixed top-0 right-0 h-full w-1/3 bg-black lg:opacity-20"></div>
@@ -83,7 +82,7 @@ function App() {
               <div className="text-[#EEEEEE] text-[18px] lg:text-[20px] w-[350px]">We make it possible in a quick and easy few steps process, takes max 5 mins</div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img1} className="rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0" alt="Step 1"/></motion.div>
+            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img1} className="rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0" alt="Home"/></motion.div>
           </section>
 
           {/* section 2 */}
@@ -100,8 +99,8 @@ function App() {
               </div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img2} className="rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0" alt="Step 2"/></motion.div>
-            {/* <img src={arrow} className='absolute'></img> */}
+            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img2} className="rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0" alt="Step 1"/></motion.div>
+            <img src={arrow} className='absolute transform scale-y-[-1] rotate-[5deg] translate-y-[-50px] translate-x-3 lg:opacity-100 opacity-0'></img>
           </section>
           
           {/* section 3 */}
@@ -118,8 +117,8 @@ function App() {
               </div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8, y:0 }} whileInView={{ scale: 1.15, y:40 }} transition={{duration:0.5}}><img src={img3} className="rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0" alt="Step 3"/></motion.div>
-            {/* <img src={arrow} className='absolute'></img> */}
+            <motion.div initial={{ scale: 0.8, y:0 }} whileInView={{ scale: 1.15, y:40 }} transition={{duration:0.5}}><img src={img3} className="rounded-[2rem] p-10 lg:scale-[115%] scale-[90%] mt-[-50px] lg:mt-0" alt="Step 1"/></motion.div>
+            <img src={arrow} className='absolute translate-y-[70px] translate-x-[100px] rotate-[-35deg] lg:opacity-100 opacity-0'></img>
           </section>
 
           {/* section 4 */}
@@ -131,7 +130,7 @@ function App() {
               <div className='text-[#FCF1B6] lg:text-[20px] text-[18px]'>
                 <ul className='list-disc pl-5'>
                   <li className='text-[#FCF1B6] marker:text-[#F6E43F]'>Tenant selects Pay with Circle enabling :
-                    <ul className='list-disc pl-5 text-[#EEEEEE] text-[16px] mt-2'>
+                    <ul className='list-disc pl-5 text-[#EEEEEE] text-[20px] mt-2'>
                       <li className='marker:text-[#EEEEEE]'>Zero security deposit move-in</li>
                       <li className='marker:text-[#EEEEEE]'>Reduced rent offer</li>
                       <li className='marker:text-[#EEEEEE]'>3 months salary cover</li>
@@ -141,8 +140,8 @@ function App() {
               </div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img4} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></motion.div>
-            {/* <img src={arrow} className='absolute'></img> */}
+            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img4} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0' alt="Step 2"></img></motion.div>
+            <img src={arrow} className='absolute translate-y-[200px] translate-x-[20px] rotate-[-5deg] lg:opacity-100 opacity-0'></img>
           </section>
 
           {/* section 5 */}
@@ -158,8 +157,8 @@ function App() {
               </div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img5} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></motion.div>
-            {/* <img src={arrow} className='absolute'></img> */}
+            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img5} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0' alt="Step 3"></img></motion.div>
+            <img src={arrow} className='absolute translate-y-[150px] rotate-[10deg] translate-x-[30px] lg:opacity-100 opacity-0'></img>
           </section>
 
           {/* section 6 */}
@@ -180,8 +179,8 @@ function App() {
               </div>
             </div>
             {/* img */}
-            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img6} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0'></img></motion.div>
-            {/* <img src={arrow} className='absolute'></img> */}
+            <motion.div initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{duration:0.5}}><img src={img6} className='rounded-[2rem] p-10 lg:scale-100 scale-[90%] mt-[-50px] lg:mt-0' alt="Step 4"></img></motion.div>
+            <img src={arrow} className='absolute translate-y-[175px] rotate-[5deg] translate-x-[20px] lg:opacity-100 opacity-0'></img>
           </section>
         </div>
       </div>
